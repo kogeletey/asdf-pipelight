@@ -41,7 +41,8 @@ download_release() {
 	filename="$2"
 
 	# TODO: Adapt the release URL convention for pipelight
-	url="$GH_REPO/archive/v${version}.tar.gz"
+	#url="$GH_REPO/archive/v${version}.tar.gz"
+	url="https://packages.pipelight.dev/pipelight-${version}-1-any.pkg.tar.zst"
 
 	echo "* Downloading $TOOL_NAME release $version..."
 	curl "${curl_opts[@]}" -o "$filename" -C - "$url" || fail "Could not download $url"
