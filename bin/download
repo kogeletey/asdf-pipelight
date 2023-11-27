@@ -21,3 +21,6 @@ tar --use-compress-program=unzstd -xvf "$release_file" -C "$ASDF_DOWNLOAD_PATH" 
 
 # Remove the tar.gz file since we don't need to keep it
 rm "$release_file"
+
+mv "$ASDF_DOWNLOAD_PATH/usr/bin/$TOOL_NAME" "$ASDF_DOWNLOAD_PATH/$TOOL_NAME"
+chmod +x "$ASDF_DOWNLOAD_PATH/$TOOL_NAME"
