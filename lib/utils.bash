@@ -2,8 +2,7 @@
 
 set -euo pipefail
 
-# TODO: Ensure this is the correct GitHub homepage where releases can be downloaded for pipelight.
-GH_REPO="https://github.com/kogeletey/pipelight"
+GH_REPO="https://github.com/pipelight/pipelight"
 TOOL_NAME="pipelight"
 TOOL_TEST="pipelight --help"
 
