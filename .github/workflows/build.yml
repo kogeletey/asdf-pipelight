@@ -13,7 +13,8 @@ jobs:
       matrix:
         os:
           - ubuntu-latest
-          - macos-latest
+            # TODO: the author does not yet support ready-made builds for macos
+            #          - macos-latest
     runs-on: ${{ matrix.os }}
     steps:
       - name: asdf_plugin_test
