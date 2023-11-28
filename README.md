@@ -15,10 +15,13 @@
 
 # Dependencies
 
-**TODO: adapt this section**
+- `bash`, `curl`, `tar`,`zstd`, and [POSIX utilities](https://pubs.opengroup.org/onlinepubs/9699919799/idx/utilities.html).
 
-- `bash`, `curl`, `tar`, and [POSIX utilities](https://pubs.opengroup.org/onlinepubs/9699919799/idx/utilities.html).
-- `SOME_ENV_VAR`: set this environment variable in your shell config to load the correct version of tool x.
+If you have a Debian system like Ubuntu, you can install it by typing
+
+```shell
+apt install zstd
+```
 
 # Install
 

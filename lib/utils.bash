@@ -30,7 +30,6 @@ list_github_tags() {
 }
 
 list_all_versions() {
-	# TODO: Adapt this. By default we simply list the tag names from GitHub releases.
 	# Change this function if pipelight has other means of determining installable versions.
 	list_github_tags
 }
@@ -40,7 +39,6 @@ download_release() {
 	version="$1"
 	filename="$2"
 
-	# TODO: Adapt the release URL convention for pipelight
 	#url="$GH_REPO/archive/v${version}.tar.gz"
 	url="https://packages.pipelight.dev/pipelight-${version}-1-any.pkg.tar.zst"
 
